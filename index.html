@@ -3,36 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LS컨설팅 - 병원 경영의 새로운 파트너</title>
+    <title>헬스케어메이트 - 환자를 위한 스마트 건강관리</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2qqeWUgYFUw5xI0rFkBx0z13dyZ9C2dJr3Kjv4b+wLM2S4pg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <h2>LS컨설팅</h2>
+                <i class="fas fa-heartbeat"></i>
+                <h1>헬스케어메이트</h1>
             </div>
             <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">홈</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">회사소개</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#services" class="nav-link">서비스</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#philosophy" class="nav-link">철학</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">연락처</a>
-                </li>
+                <li class="nav-item"><a href="#home" class="nav-link">홈</a></li>
+                <li class="nav-item"><a href="#features" class="nav-link">기능</a></li>
+                <li class="nav-item"><a href="#programs" class="nav-link">케어플랜</a></li>
+                <li class="nav-item"><a href="#community" class="nav-link">후기</a></li>
+                <li class="nav-item"><a href="#pricing" class="nav-link">요금제</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">문의</a></li>
             </ul>
-            <div class="hamburger">
+            <div class="hamburger" aria-label="모바일 메뉴 열기" role="button">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -40,260 +31,467 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <h1 class="hero-title">
-                    병원 경영의 <span class="highlight">새로운 파트너</span>
-                </h1>
+                <span class="badge">AI 기반 개인 맞춤 건강 동반자</span>
+                <h2 class="hero-title">환자의 일상을 연결하는 <span class="highlight">스마트 건강관리</span></h2>
                 <p class="hero-subtitle">
-                    LS컨설팅은 병원 개원부터 운영, 성장까지 병원의 철학과 시스템을 중심으로 설계하는 전문 컨설팅 기업입니다.
+                    헬스케어메이트는 혈압·혈당·수면·약 복용까지 환자의 건강 데이터를 한곳에 모아 분석하고,
+                    맞춤형 리포트와 코칭으로 스스로 건강을 관리할 수 있도록 돕습니다.
                 </p>
-                <div class="hero-buttons">
-                    <a href="#about" class="btn btn-primary">더 알아보기</a>
-                    <a href="#contact" class="btn btn-secondary">상담 문의</a>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary">도입 상담 신청</a>
+                    <a href="#features" class="btn btn-secondary">주요 기능 살펴보기</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="12400">0</div>
+                        <p class="stat-label">일일 건강 리포트 발행</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="89">0</div>
+                        <p class="stat-label">평균 건강지수 향상(%)</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="32">0</div>
+                        <p class="stat-label">연동 가능한 디바이스</p>
+                    </div>
                 </div>
             </div>
-            <div class="hero-image">
-                <div class="hero-graphic">
-                    <i class="fas fa-hospital"></i>
+            <div class="hero-visual" aria-hidden="true">
+                <div class="phone-mockup">
+                    <div class="mockup-header">
+                        <span class="signal"></span>
+                        <span class="signal"></span>
+                        <span class="signal"></span>
+                    </div>
+                    <div class="mockup-screen">
+                        <div class="screen-header">
+                            <span class="status">오늘의 케어</span>
+                            <span class="date">2024.05.15</span>
+                        </div>
+                        <div class="screen-content">
+                            <div class="metric-card">
+                                <div class="metric-icon bg-blue"><i class="fas fa-heart-pulse"></i></div>
+                                <div>
+                                    <p class="metric-label">평균 심박수</p>
+                                    <p class="metric-value">72 bpm</p>
+                                </div>
+                                <span class="metric-trend up">+4</span>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-icon bg-purple"><i class="fas fa-droplet"></i></div>
+                                <div>
+                                    <p class="metric-label">공복 혈당</p>
+                                    <p class="metric-value">94 mg/dL</p>
+                                </div>
+                                <span class="metric-trend down">-8</span>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-icon bg-green"><i class="fas fa-moon"></i></div>
+                                <div>
+                                    <p class="metric-label">수면 점수</p>
+                                    <p class="metric-value">86 / 100</p>
+                                </div>
+                                <span class="metric-trend up">+6</span>
+                            </div>
+                        </div>
+                        <div class="screen-footer">
+                            <p>약 복용 알림 · 스트레칭 10분 · 수분 섭취 6잔</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="floating-card">
+                    <i class="fas fa-shield-heart"></i>
+                    <div>
+                        <p class="floating-title">AI 케어 코치</p>
+                        <p class="floating-subtitle">생활 패턴 분석 후 맞춤 행동 제안</p>
+                    </div>
+                </div>
+                <div class="floating-card secondary">
+                    <i class="fas fa-comments-medical"></i>
+                    <div>
+                        <p class="floating-title">원격 모니터링</p>
+                        <p class="floating-subtitle">의료진과 실시간 데이터 공유</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <section id="features" class="features">
         <div class="container">
             <div class="section-header">
-                <h2>LS컨설팅 소개</h2>
-                <p>병원 경영의 모든 것을 함께합니다</p>
+                <span class="section-badge">Features</span>
+                <h2>환자를 위한 핵심 기능</h2>
+                <p>데이터 수집부터 행동 변화까지, 환자의 건강 여정을 촘촘하게 설계했습니다.</p>
             </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>전문적인 병원 컨설팅</h3>
+            <div class="feature-grid">
+                <article class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-mobile-screen"></i></div>
+                    <h3>통합 건강 대시보드</h3>
+                    <p>혈압, 혈당, 체중, 활동량, 수면 데이터를 한 화면에서 확인하고 추이를 분석합니다.</p>
+                </article>
+                <article class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-robot"></i></div>
+                    <h3>AI 케어 코칭</h3>
+                    <p>개인의 생활 패턴과 목표를 학습해 맞춤형 식단, 운동, 복약 코칭을 제공합니다.</p>
+                </article>
+                <article class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-bell"></i></div>
+                    <h3>복약 & 예약 알림</h3>
+                    <p>약 복용, 외래 예약, 검사 일정까지 자동으로 알려줘 놓치지 않도록 돕습니다.</p>
+                </article>
+                <article class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-link"></i></div>
+                    <h3>디바이스 연동</h3>
+                    <p>스마트워치, 혈압계, 혈당계 등 30여 종의 기기를 연동해 정확한 데이터를 수집합니다.</p>
+                </article>
+                <article class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-user-doctor"></i></div>
+                    <h3>원격 모니터링</h3>
+                    <p>의료진이 환자의 상태를 실시간으로 확인하고 위험 신호를 즉시 대응합니다.</p>
+                </article>
+                <article class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-comments"></i></div>
+                    <h3>커뮤니티 & 동기부여</h3>
+                    <p>비슷한 목표를 가진 환자들과 챌린지를 진행하며 지속적인 행동 변화를 이끌어 냅니다.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="insights" id="insights">
+        <div class="container">
+            <div class="insights-wrapper">
+                <div class="insights-text">
+                    <span class="section-badge">Dashboard</span>
+                    <h2>데이터 기반 맞춤 인사이트</h2>
                     <p>
-                        단순한 인허가나 인테리어 중심의 컨설팅을 넘어, 병원장이 스스로 경영자로 성장할 수 있도록 
-                        전략·조직·브랜딩·마케팅을 통합 지원합니다.
+                        헬스케어메이트는 환자의 일상 데이터를 수집하여 건강 위험도를 예측하고, 치료 계획에 맞는
+                        행동 목표를 제안합니다. 카테고리를 전환하며 환자의 변화를 미리 체험해 보세요.
                     </p>
-                    <p>
-                        데이터 기반의 해피케어 솔루션과 실무 중심 노하우로, 지속 가능한 병원 경영을 만들어가는 파트너입니다.
-                    </p>
+                    <div class="insight-tabs" role="tablist">
+                        <button class="insight-tab active" data-target="glucose" role="tab">혈당 관리</button>
+                        <button class="insight-tab" data-target="blood-pressure" role="tab">혈압 안정</button>
+                        <button class="insight-tab" data-target="wellness" role="tab">생활 습관</button>
+                    </div>
+                    <ul class="insight-benefits">
+                        <li><i class="fas fa-check"></i> 위험 알림과 응급 연락 시나리오 설정</li>
+                        <li><i class="fas fa-check"></i> 목표 달성률 기반의 보상 시스템</li>
+                        <li><i class="fas fa-check"></i> 의료진-환자-보호자 간 협업 노트</li>
+                    </ul>
                 </div>
-                <div class="about-stats">
-                    <div class="stat-item">
-                        <div class="stat-number" data-target="100">0</div>
-                        <div class="stat-label">성공한 병원</div>
+                <div class="insight-panel" role="tabpanel">
+                    <div class="insight-header">
+                        <h3 id="insightTitle">혈당 관리 주간 리포트</h3>
+                        <span id="insightScore" class="insight-score stable">안정</span>
                     </div>
-                    <div class="stat-item">
-                        <div class="stat-number" data-target="15">0</div>
-                        <div class="stat-label">년 경험</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number" data-target="98">0</div>
-                        <div class="stat-label">% 만족도</div>
+                    <p id="insightDescription" class="insight-description">
+                        공복 혈당과 식후 혈당이 목표 범위에서 유지되고 있어요. 식단 기록을 바탕으로 주 3회 저강도 유산소 운동을 추천합니다.
+                    </p>
+                    <div class="insight-metrics">
+                        <div class="insight-metric">
+                            <div class="metric-header">
+                                <span id="metricPrimaryLabel">공복 혈당</span>
+                                <span id="metricPrimaryValue" class="metric-value">94 mg/dL</span>
+                            </div>
+                            <div class="progress">
+                                <div id="metricPrimaryBar" class="progress-bar" style="width: 62%"></div>
+                            </div>
+                        </div>
+                        <div class="insight-metric">
+                            <div class="metric-header">
+                                <span id="metricSecondaryLabel">목표 달성률</span>
+                                <span id="metricSecondaryValue" class="metric-value">88%</span>
+                            </div>
+                            <div class="progress">
+                                <div id="metricSecondaryBar" class="progress-bar" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="insight-metric compact">
+                            <span>코칭 추천</span>
+                            <span id="metricTag" class="metric-tag">저녁 식사 후 15분 걷기</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
+    <section id="programs" class="journey">
         <div class="container">
             <div class="section-header">
-                <h2>서비스 영역</h2>
-                <p>병원 경영의 모든 단계를 지원합니다</p>
+                <span class="section-badge">Care Plan</span>
+                <h2>4단계 개인 맞춤 케어 플랜</h2>
+                <p>환자의 건강 목표를 달성하기 위한 여정을 주 단위로 설계합니다.</p>
             </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-clipboard-check"></i>
-                    </div>
-                    <h3>병원 개원 컨설팅</h3>
-                    <p>인허가부터 초기 운영까지 체계적인 개원 지원</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3>경영 전략 수립</h3>
-                    <p>데이터 기반의 맞춤형 경영 전략과 성장 계획</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h3>조직 관리</h3>
-                    <p>효율적인 조직 구조와 인력 관리 시스템</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-bullhorn"></i>
-                    </div>
-                    <h3>브랜딩 & 마케팅</h3>
-                    <p>병원 브랜드 구축과 효과적인 마케팅 전략</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <h3>해피케어 솔루션</h3>
-                    <p>환자 중심의 서비스 품질 향상 솔루션</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <h3>경영자 교육</h3>
-                    <p>병원장의 경영 역량 강화 프로그램</p>
-                </div>
+            <div class="journey-steps">
+                <article class="journey-step">
+                    <span class="step-number">01</span>
+                    <h3>데이터 연결 & 베이스라인</h3>
+                    <p>기기와 진료 기록을 연동하고 현재 건강 상태를 분석하여 맞춤 목표를 설정합니다.</p>
+                    <ul>
+                        <li>스마트 디바이스 자동 연동</li>
+                        <li>과거 진료 기록 가져오기</li>
+                        <li>AI 건강 리포트 발행</li>
+                    </ul>
+                </article>
+                <article class="journey-step">
+                    <span class="step-number">02</span>
+                    <h3>행동 목표 설계</h3>
+                    <p>식단, 운동, 복약 계획을 환자의 생활 패턴에 맞춰 세분화합니다.</p>
+                    <ul>
+                        <li>하루 3회 복약 및 식사 기록</li>
+                        <li>수면/활동량 기반 운동 추천</li>
+                        <li>보호자와 공유 가능한 목표</li>
+                    </ul>
+                </article>
+                <article class="journey-step">
+                    <span class="step-number">03</span>
+                    <h3>실시간 모니터링</h3>
+                    <p>이상 징후를 감지하면 의료진에게 알리고, 환자에게 행동 제안을 전송합니다.</p>
+                    <ul>
+                        <li>응급시 연락 프로토콜</li>
+                        <li>위험 지표 색상 경보</li>
+                        <li>의료진 주간 상담 메모</li>
+                    </ul>
+                </article>
+                <article class="journey-step">
+                    <span class="step-number">04</span>
+                    <h3>성과 리뷰 & 유지</h3>
+                    <p>월간 리포트로 목표 달성률을 확인하고 새로운 건강 습관을 설계합니다.</p>
+                    <ul>
+                        <li>PDF 건강 리포트 자동 생성</li>
+                        <li>건강지수 추세 비교</li>
+                        <li>장기 목표 재설정</li>
+                    </ul>
+                </article>
             </div>
         </div>
     </section>
 
-    <!-- Philosophy Section -->
-    <section id="philosophy" class="philosophy">
+    <section id="community" class="community">
         <div class="container">
-            <div class="philosophy-content">
-                <div class="philosophy-text">
-                    <h2>우리의 철학</h2>
-                    <div class="philosophy-item">
-                        <h3><i class="fas fa-lightbulb"></i> 혁신적 사고</h3>
-                        <p>기존의 틀에 얽매이지 않고 새로운 관점으로 병원 경영의 가능성을 열어갑니다.</p>
-                    </div>
-                    <div class="philosophy-item">
-                        <h3><i class="fas fa-handshake"></i> 파트너십</h3>
-                        <p>단순한 컨설팅을 넘어 진정한 파트너로서 함께 성장해나갑니다.</p>
-                    </div>
-                    <div class="philosophy-item">
-                        <h3><i class="fas fa-chart-bar"></i> 데이터 중심</h3>
-                        <p>감이 아닌 데이터와 분석을 바탕으로 한 과학적인 접근을 추구합니다.</p>
-                    </div>
+            <div class="section-header">
+                <span class="section-badge">Stories</span>
+                <h2>환자와 의료진이 들려주는 변화</h2>
+                <p>헬스케어메이트로 관리 중인 환자들의 생생한 목소리를 확인하세요.</p>
+            </div>
+            <div class="community-grid">
+                <article class="community-card">
+                    <div class="community-icon"><i class="fas fa-user-nurse"></i></div>
+                    <p class="community-quote">“당뇨 환자들의 혈당 변동을 실시간으로 확인해 위기 상황을 한 발 먼저 대응하고 있습니다.”</p>
+                    <p class="community-author">김지훈 교수 · 내분비내과</p>
+                </article>
+                <article class="community-card">
+                    <div class="community-icon"><i class="fas fa-user"></i></div>
+                    <p class="community-quote">“복약 알림과 식단 코칭 덕분에 3개월 만에 평균 혈당이 15% 낮아졌어요.”</p>
+                    <p class="community-author">정미라 환자 · 54세</p>
+                </article>
+                <article class="community-card">
+                    <div class="community-icon"><i class="fas fa-users"></i></div>
+                    <p class="community-quote">“부모님 건강 데이터를 형제들과 공유하면서 돌봄 부담이 훨씬 줄었습니다.”</p>
+                    <p class="community-author">박가영 보호자 · 가족 케어 담당</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Pricing</span>
+                <h2>기관 규모에 맞춘 요금제</h2>
+                <p>의료기관, 만성질환 관리센터, 보험사 등 다양한 현장에서 활용할 수 있습니다.</p>
+            </div>
+            <div class="pricing-grid">
+                <article class="pricing-card">
+                    <span class="plan-name">Starter</span>
+                    <h3>월 190,000원</h3>
+                    <p class="plan-desc">소규모 의원 및 디지털 치료제 스타트업에 적합</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> 환자 계정 200명</li>
+                        <li><i class="fas fa-check"></i> 기본 대시보드 & 리포트</li>
+                        <li><i class="fas fa-check"></i> 디바이스 10종 연동</li>
+                        <li><i class="fas fa-check"></i> 이메일 & 채팅 지원</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">도입 문의</a>
+                </article>
+                <article class="pricing-card highlight">
+                    <span class="pricing-badge">인기</span>
+                    <span class="plan-name">Professional</span>
+                    <h3>월 390,000원</h3>
+                    <p class="plan-desc">만성질환 전문센터와 재활 병원에서 선호하는 플랜</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> 환자 계정 1,000명</li>
+                        <li><i class="fas fa-check"></i> AI 코칭 & 맞춤 리포트</li>
+                        <li><i class="fas fa-check"></i> 응급 알림 & 보호자 연동</li>
+                        <li><i class="fas fa-check"></i> 전담 케어 매니저</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">상담 예약</a>
+                </article>
+                <article class="pricing-card">
+                    <span class="plan-name">Enterprise</span>
+                    <h3>별도 문의</h3>
+                    <p class="plan-desc">보험사, 지자체, 대형 의료기관을 위한 맞춤 구축</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> 전용 브랜드 앱 커스터마이징</li>
+                        <li><i class="fas fa-check"></i> 다중 기관 데이터 연동</li>
+                        <li><i class="fas fa-check"></i> 보안 및 인증 컨설팅</li>
+                        <li><i class="fas fa-check"></i> 통합 헬스케어 분석 플랫폼</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">제안서 받기</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta" aria-label="앱 다운로드 안내">
+        <div class="container">
+            <div class="cta-content">
+                <div>
+                    <h2>환자 건강관리, 이제 헬스케어메이트 하나면 충분합니다.</h2>
+                    <p>iOS와 Android에서 사용할 수 있으며, 병원 EMR과도 연동 가능합니다.</p>
                 </div>
-                <div class="philosophy-visual">
-                    <div class="philosophy-circle">
-                        <div class="circle-item">
-                            <i class="fas fa-heart"></i>
-                            <span>환자 중심</span>
-                        </div>
-                        <div class="circle-item">
-                            <i class="fas fa-cogs"></i>
-                            <span>시스템화</span>
-                        </div>
-                        <div class="circle-item">
-                            <i class="fas fa-rocket"></i>
-                            <span>지속 성장</span>
-                        </div>
-                    </div>
+                <div class="store-buttons">
+                    <a href="#" class="store-button"><i class="fab fa-apple"></i> App Store</a>
+                    <a href="#" class="store-button"><i class="fab fa-google-play"></i> Google Play</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">FAQ</span>
+                <h2>자주 묻는 질문</h2>
+                <p>헬스케어메이트 도입을 고민하는 분들의 질문을 모았습니다.</p>
+            </div>
+            <div class="faq-list">
+                <article class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        원격 환자 모니터링(RPM) 청구가 가능한가요?
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        헬스케어메이트는 환자 데이터 자동 수집, 이상 알림, 주간 리포트 발행 기능을 제공해 RPM 요건을 충족합니다.
+                        보험 청구 서류 자동화를 위한 별도 템플릿도 지원합니다.
+                    </div>
+                </article>
+                <article class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        기존 EMR과의 연동은 어떻게 진행되나요?
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        HL7 FHIR 기반 API와 커스텀 어댑터를 제공하여 병원 EMR, 건강보험공단 시스템 등과 안전하게 연동합니다.
+                        전담 엔지니어가 연동 작업을 지원합니다.
+                    </div>
+                </article>
+                <article class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        고령 환자도 사용하기 쉬운가요?
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        문자·음성 안내, 큰 글씨 모드, 보호자 대리 입력 기능을 제공하여 디지털 접근성이 낮은 환자도 쉽게 사용할 수 있습니다.
+                    </div>
+                </article>
+                <article class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        데이터 보안은 어떻게 보장되나요?
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        의료정보보호법을 준수하며, 모든 데이터는 암호화 저장 및 전송되고, 이상 접근 탐지 시스템으로 실시간 모니터링합니다.
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-header">
-                <h2>상담 문의</h2>
-                <p>병원 경영에 대한 모든 궁금증을 해결해드립니다</p>
+                <span class="section-badge">Contact</span>
+                <h2>도입 상담을 신청하세요</h2>
+                <p>기관 규모와 요구 사항을 알려주시면 맞춤 구성과 견적을 안내드립니다.</p>
             </div>
-            <div class="contact-content">
+            <div class="contact-grid">
                 <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h4>전화 문의</h4>
-                            <p>02-1234-5678</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
+                    <div class="info-card">
                         <i class="fas fa-envelope"></i>
                         <div>
-                            <h4>이메일</h4>
-                            <p>info@lsconsulting.co.kr</p>
+                            <h3>이메일</h3>
+                            <p>hello@healthcaremate.kr</p>
                         </div>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
+                    <div class="info-card">
+                        <i class="fas fa-phone"></i>
                         <div>
-                            <h4>주소</h4>
-                            <p>서울시 강남구 테헤란로 123</p>
+                            <h3>전화</h3>
+                            <p>02-3456-7890</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-location-dot"></i>
+                        <div>
+                            <h3>주소</h3>
+                            <p>서울특별시 강남구 테헤란로 123 헬스케어타워 16F</p>
                         </div>
                     </div>
                 </div>
-                <div class="contact-form">
-                    <form id="contactForm">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-row">
                         <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="이름" required>
+                            <label for="name">담당자 이름</label>
+                            <input type="text" id="name" name="name" placeholder="홍길동" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="이메일" required>
+                            <label for="email">업무 이메일</label>
+                            <input type="email" id="email" name="email" placeholder="you@company.com" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">연락처</label>
+                            <input type="tel" id="phone" name="phone" placeholder="010-1234-5678">
                         </div>
                         <div class="form-group">
-                            <input type="tel" id="phone" name="phone" placeholder="연락처">
-                        </div>
-                        <div class="form-group">
-                            <select id="service" name="service" required>
-                                <option value="">관심 서비스 선택</option>
-                                <option value="opening">병원 개원</option>
-                                <option value="strategy">경영 전략</option>
-                                <option value="organization">조직 관리</option>
-                                <option value="marketing">브랜딩 & 마케팅</option>
-                                <option value="solution">해피케어 솔루션</option>
-                                <option value="education">경영자 교육</option>
+                            <label for="goal">관심 서비스</label>
+                            <select id="goal" name="goal" required>
+                                <option value="">선택해주세요</option>
+                                <option value="clinic">의원·병원 환자관리</option>
+                                <option value="center">만성질환 관리센터</option>
+                                <option value="insurance">보험사/기업 제휴</option>
+                                <option value="custom">맞춤 구축 상담</option>
                             </select>
                         </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="문의 내용" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">문의하기</button>
-                    </form>
-                </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">상담 요청 내용</label>
+                        <textarea id="message" name="message" rows="5" placeholder="현재 상황과 필요한 기능을 알려주세요." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">상담 요청 보내기</button>
+                </form>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>LS컨설팅</h3>
-                    <p>병원 경영의 새로운 파트너</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h4>서비스</h4>
-                    <ul>
-                        <li><a href="#services">병원 개원</a></li>
-                        <li><a href="#services">경영 전략</a></li>
-                        <li><a href="#services">조직 관리</a></li>
-                        <li><a href="#services">브랜딩 & 마케팅</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>회사</h4>
-                    <ul>
-                        <li><a href="#about">회사소개</a></li>
-                        <li><a href="#philosophy">철학</a></li>
-                        <li><a href="#contact">연락처</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>연락처</h4>
-                    <p><i class="fas fa-phone"></i> 02-1234-5678</p>
-                    <p><i class="fas fa-envelope"></i> info@lsconsulting.co.kr</p>
-                    <p><i class="fas fa-map-marker-alt"></i> 서울시 강남구 테헤란로 123</p>
-                </div>
+            <div class="footer-brand">
+                <i class="fas fa-heartbeat"></i>
+                <span>헬스케어메이트</span>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 LS컨설팅. All rights reserved.</p>
+            <p>© 2024 HealthcareMate Inc. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#privacy">개인정보처리방침</a>
+                <a href="#terms">이용약관</a>
+                <a href="#faq">FAQ</a>
             </div>
         </div>
     </footer>
